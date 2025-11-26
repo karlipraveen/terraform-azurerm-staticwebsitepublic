@@ -37,4 +37,4 @@ jobs:
           git config --global user.email 'devopshint@gmail.com'
           git add values.yaml
           git commit -m "Update values.yaml"
-          git push
+          git push origin main
