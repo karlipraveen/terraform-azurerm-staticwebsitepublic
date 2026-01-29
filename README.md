@@ -44,7 +44,7 @@ Suites: $(. /etc/os-release && echo "${UBUNTU_CODENAME:-$VERSION_CODENAME}")
 Components: stable
 Signed-By: /etc/apt/keyrings/docker.asc
 EOF
-
+```
 # Install the Docker packages.
 sudo apt update
 sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin -y
@@ -57,4 +57,4 @@ sudo groupadd docker
 sudo usermod -aG docker $USER
 newgrp docker
 docker run hello-world
-
+```
